@@ -22,10 +22,8 @@ This assignment helped me understand how port scanning works using low-level Pyt
 
 import socket
 import time
-
 target = "scanme.nmap.org"
 print(f"Scanning {target} (ports 1-100):\n")
-
 for port in range(1, 101):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(0.5)
