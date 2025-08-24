@@ -2,21 +2,21 @@
 # Assignment 19: Python Socket Port Scanner  
 **Student ID:** Ramya-9739  
 
-## 🧠 Methodology  
+##  Methodology  
 I wrote a 15-line Python script using the `socket` module to scan ports 1–100 on the domain `scanme.nmap.org`. The script attempts a TCP connection to each port and prints whether it is open or closed. A short sleep delay is added between scans using `time.sleep(0.1)`.
 
-## 📸 Screenshot  
+##  Screenshot  
 *(Insert `scan_output.png` in this directory)*
 
-## 🔍 Findings  
+##  Findings  
 - **Open ports found:** 22, 80 *(example — replace with your actual results)*
 - Most ports were reported as closed, which is expected from secure servers.
 - The scanner correctly identified port status using raw socket connections.
 
-## 📘 Conclusion  
+##  Conclusion  
 This assignment helped me understand how port scanning works using low-level Python socket programming. Unlike tools like Nmap that provide advanced scanning and service detection, this script helped me learn how basic connection attempts can reveal open ports.
 
-## 🧑‍💻 Code  
+##  Code  
 
 ```python
 import socket
